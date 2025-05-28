@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="elenco.html" aria-current="page">Elenco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forms.html"> Formulário </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- titulo, subtitulo e botão de scroll -->
+     <div class="container">
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 font-weight-normal">Águias IFPB</h1>
+          <p class="lead font-weight-normal text-white">O time de Basquete Universitário de João Pessoa!</p>
+          <button class="scroll-button" data-target="alvo"> VENHA CONHECER </button>
+        </div>
+
+      </div>
+      
+  </header>
+
+  <main>
+    <!-- Sumário -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="sumario">
+          <h2>Sumário</h2>
+          <ul>
+              <li><a href="#"> Introdução </a></li>
+              <li><a href="#elenco"> Elenco </a></li>
+              <li><a href="#historia"> História </a></li>
+              <li><a href="#treino"> Treinos </a></li>
+              <li><a href="#conquistas"> Conquistas </a></li>
+              <li><a href="#contato"> Contato </a></li>
+          </ul>
+          </div>
+        </div> <!-- Primeira caixa de dialogo -->
+        <div class="col-md-8">
+          <section> 
+            <div id="alvo" class="content">
+              <h2 class="titulo_index"> Introdução </h2>
+              <p class="texto_index"> O Águias IFPB é um time de basquete universitário que representa o Instituto Federal da Paraíba (IFPB) em competições regionais e nacionais. 
+                Composto por estudantes apaixonados pelo esporte, o time busca promover a prática do basquete entre os alunos, além de incentivar a formação 
+                de atletas e a participação em eventos esportivos. Águias IFPB é uma equipe esportiva de grande tradição na Paraíba, destacando-se por sua participação em competições estaduais,
+                regionais e nacionais. Ao longo de sua trajetória, o time conquistou diversos títulos e consolidou sua reputação como um dos mais competitivos do estado.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"><!-- Segunda caixa de dialogo -->
+      <div>
+        <p></p>
+      </div>
+      <div class="d-flex flex-column flex-md-row align-items-start gap-4">
+        <!-- Texto sobre o elenco -->
+        <div class="flex-grow-1">
+          <h1 id="elenco" class="titulo_index">Elenco</h1>
+          <p class="texto_index">O time é formado por estudantes do IFPB, que se destacam não apenas pelo talento em quadra, mas também pelo comprometimento com os estudos e a disciplina. O elenco é composto por jogadores de diversas formações acadêmicas, o que enriquece a convivência e o aprendizado mútuo.</p>
+        </div>
+        <!-- Card de chamada -->
+        <div class="flex-shrink-0" style="width: 100%; max-width: 400px;">
+          <div class="container mt-5 d-flex justify-content-center">
+            <a href="elenco.html" class="card-moderna" aria-label="Venha conhecer nossos jogadores">
+              <div class="card-conteudo">
+                <div class="card-texto">
+                  <h3> Venha conhecer nosso Elenco </h3>
+                  <p>Conheça nossos jogadores, suas histórias e trajetórias no basquete universitário.</p>
+                </div>
+                <div class="card-icone">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg> 
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"> <!-- Terceira caixa de dialogo -->
+      <div>
+        <h1 id="historia"class="titulo_index"> História </h1>
+        <p class="texto_index">Sob o comando do técnico Maurão, o Águias IFPB viveu uma era de ouro, acumulando conquistas importantes e fortalecendo seu prestígio no cenário esportivo. Durante esse período, a equipe se destacou em torneios como os Jogos Universitários Brasileiros (JUBs) e o Campeonato Paraibano, sempre apresentando alto nível técnico e competitividade. Agora, sob a liderança do técnico Valbério, o time busca manter esse legado de vitórias e almeja alcançar novos patamares, com foco na renovação e evolução tática. Além de sua atuação em competições, o Águias IFPB desempenha um papel fundamental na formação de atletas, sendo responsável pelo desenvolvimento de talentos que posteriormente brilham em outros cenários esportivos</p>
+        <img src="imagens/foto_time1.png" alt="Foto do time Águias IFPB" class="img-fluid mb-4 img-time-aguias">
+        <p class="texto_index"> A equipe também contribui para o fortalecimento do esporte na Paraíba, promovendo treinamentos intensivos, participação em eventos e integração entre atletas experientes e jovens promessas. Com uma identidade consolidada e um histórico repleto de conquistas, o Águias IFPB segue determinado a escrever novos capítulos de sucesso em sua jornada esportiva, mantendo-se firme entre os principais times do estado. </p>
+      </div>
+    </div>
+
+    <div class="container"> <!-- Quarta caixa de dialogo -->  
+      <div>
+        <h1 id="treino"> </h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h1 class="titulo_index">Treinos</h1>
+              <p class="texto_index">Os treinos do Águias IFPB ocorrem três vezes por semana, no ginásio do IFPB. Os treinos são abertos a todos os estudantes interessados em participar, independentemente do nível de habilidade. O objetivo é promover a prática do basquete e desenvolver as habilidades dos jogadores.</p>
+            </div>
+            <div class="col-md-8">
+              <div id="map"></div>
+              <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"> <!-- Quinta caixa de dialogo -->  
+      <div>
+        <div class="container">
+          <p> </p> <!-- caixa de conquistas -->
+        <h1 id="conquistas" class="titulo_index"> Conquistas </h1>
+        <p class="texto_index">Ao longo dos anos, o Águias IFPB tem conquistado diversos títulos em competições regionais e nacionais. O time é conhecido por sua garra e determinação, sempre buscando superar os desafios e representar o IFPB com orgulho.</p>
+        </div>
+        <div class="hover-list">
+          <h3 class="text-white text-center"> Principais Títulos </h3>
+          <ul>
+            
+            <li>
+              <div class="list-content">
+                <span> JIF'S etapa estadual </span>
+                <span>---</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-content">
+                <span> JIF'S etapa regional </span>
+                <span>---</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="list-content">
+                <span> 2° lugar da etapa nacional do JIF'S </span>
+                <span>---</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container"> <!-- Sexta caixa de dialogo -->    
+      <div>
+        <p> </p> <!-- caixa de contatos -->
+        <h1 id="contato" class="titulo_index"> Contato </h1>
+        <p> </p>
+      </div>
+      <div class="container"> <!--botões de interação-->
+        <div class="container-buttons d-flex justify-content-center">
+          <a href="https://www.instagram.com/basqueteaguias/" target="_blank" class="instagram-btn">
+            <i class="fab fa-instagram"></i>
+            <span class="btn-text">Nos siga no Instagram</span>
+            <span class="hover-effect"></span>
+          </a>
+          
+          <a href="forms.html" target="_blank" class="forms-btn">
+            <i class="fas fa-envelope"></i>  
+            <span class="btn-text"> Venha fazer parte do Águias </span>
+            <span class="hover-effect"></span>
+          </a>
+          
+          <a href="https://www.ifpb.edu.br/joaopessoa/noticias/2016/09/ifpb-e-campeao-no-basquete-masculino#:~:text=Num%20jogo%20eletrizante%2C%20decidido%20literalmente%20nos%20%C3%BAltimos,para%20a%20Nacional%2C%20que%20aconte%20em%20Bras%C3%ADlia." target="_blank" class="ifpb-btn">
+            <i class="fas fa-university"></i>
+            <span class="btn-text"> Nos acompanhe no site IFPB </span>
+            <span class="hover-effect"></span>
+          </a>
+        </div> 
+      </div>  
+    </div>
+
+    
+  </main>
+
+  <footer>
+    <p> </p>
+  <div class="container">
+    <p class="text-center">
+      <a href="#" class="back-to-top">↑</a> 
+    </p>
+  </div>
+  <p> </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

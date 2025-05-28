@@ -1,0 +1,368 @@
+/* Cor do body e imagem de fundo (Brand do IF)*/
+body {
+margin: 0;
+min-height: 100vh;
+  color: #ffffff;
+  background: 
+  radial-gradient(circle, rgba(33, 33, 33, 0.86) 0%, rgba(0, 0, 0, 0.92) 100%),
+  url('imagens/brand_IFPB.png') center/contain no-repeat fixed;
+  }
+
+/* style do Index */
+/* Estilo do texto */
+
+.container:not(:last-child) {
+  margin-bottom: 120px; /* Adiciona espaço em todos exceto no último */
+}
+.titulo_index {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff2121;
+  margin-top: 20px;
+  font-family: 'Rajdhani', sans-serif;
+}
+.texto_index {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 20px auto;
+  font-family: 'Rajdhani', sans-serif;
+}
+/* Estilo para o botão de rolagem */
+.scroll-button {
+  padding: 12px 24px;
+  background-color: #f94d4d;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.scroll-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f03a3a;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+.scroll-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* Estilo do sumário */
+:root {
+  --primary-color: #ee4351;
+  --secondary-color: #a30c19;
+  --text-color: #ffffff;
+  --light-bg: #e9e9e9;
+  --white: #030303;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+.sumario {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+  max-width: 300px;
+}
+
+.sumario h2 {
+  margin: 0 0 20px 0;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.sumario h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 3px;
+}
+
+.sumario ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sumario li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.sumario li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.sumario li:hover::before {
+  background-color: var(--secondary-color);
+  transform: translateY(-50%) scale(1.3);
+}
+
+.sumario a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: var(--transition);
+  display: block;
+  padding: 5px 0;
+}
+
+.sumario a:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.sumario ul ul {
+  margin-top: 8px;
+  margin-left: 15px;
+  border-left: 1px dashed #ddd;
+  padding-left: 15px;
+}
+
+.sumario ul ul li::before {
+  background-color: #adb5bd;
+}
+/* card para a página elenco */
+  .card-moderna {
+    display: block;
+    max-width: 400px;
+    background: rgb(0, 0, 0);
+    border-radius: 16px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card-moderna:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  }
+  
+  .card-moderna::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff0000 0%, #ff002b 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-moderna:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .card-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-texto {
+    flex: 1;
+  }
+  
+  .card-tag {
+    display: inline-block;
+    background: rgba(255, 107, 0, 0.1);
+    color: #ff0000;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .card-texto h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    color: #e2e2e2;
+  }
+  
+  .card-texto p {
+    margin: 0;
+    color: #b1b1b1;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .card-icone {
+    color: #ff0000;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-moderna:hover .card-icone {
+    transform: translateX(3px);
+  }
+
+  .img-time-aguias {
+    width: 1000px; /* ou qualquer tamanho desejado */
+    height: auto; /* mantém a proporção */
+    border-radius: 8px; /* bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */ 
+    transition: transform 0.3s ease; /* efeito de hover suave */
+    display: block; /* para centralizar com margin */
+    margin: 0 auto 1rem; /* centraliza e mantém margem inferior */
+  }
+
+  .img-time-aguias:hover {
+    transform: scale(1.02); /* efeito de zoom leve ao passar o mouse */
+  }
+/* Estilo do mapa */
+ #map { 
+      height: 300px; 
+      width: 100%;
+      border: 2px solid #660000; 
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+/* estilo da lista */
+ .hover-list {
+    --accent-color: #ff4a4a;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .hover-list h2 {
+    color: #d83e3e;
+    margin-bottom: 1rem;
+  }
+  
+  .hover-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .hover-list li {
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .hover-list li:hover {
+    background: rgba(74, 107, 255, 0.05);
+    transform: translateX(4px);
+  }
+  
+  .list-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+  
+  .list-content span:last-child {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+
+/* Estilo do botão do Instagram */
+  .container-buttons {
+    display: flex;
+    gap: 15px; /* Espaço entre os botões */
+    flex-wrap: wrap; /* Permite que os botões quebrem para linha seguinte em telas pequenas */
+  }
+  
+  .instagram-btn, .forms-btn, .ifpb-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .instagram-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  }
+  
+  .forms-btn {
+    background: #333333;
+  }
+  
+  .ifpb-btn {
+    background: #ff0000;
+  }
+  
+  .instagram-btn:hover, .forms-btn:hover, .ifpb-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .hover-effect {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.4s ease;
+  }
+  
+  .instagram-btn:hover .hover-effect,
+  .forms-btn:hover .hover-effect,
+  .ifpb-btn:hover .hover-effect {
+    left: 0;
+  }
+  
+  .fab {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sumario {
+    position: static;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+}
